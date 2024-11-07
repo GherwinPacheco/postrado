@@ -1,0 +1,54 @@
+#save-btn{
+    transition: 0.3s;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-label small{
+    display: block;
+}
+
+#store-mailer-details .input-label{
+    flex: 1
+}
+
+#store-mailer-details .input-container input, 
+#store-mailer-details .input-container .input-group{
+    flex: 1
+}
+
+#ordering-properties .input-label{
+    flex: 2
+}
+
+#ordering-properties .input-container .input-group{
+    flex: 1
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    #main-div{
+        font-size: 3.5vw;
+    }
+    
+    .heading-text{
+        font-size: 5vw;
+    }
+    
+    
+    
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {}

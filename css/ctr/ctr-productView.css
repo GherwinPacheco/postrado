@@ -1,0 +1,37 @@
+#description{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.productImgModal {
+    width: 80px;
+}
+
+.add-cart-btn:hover{
+    text-decoration: none;
+    color: black
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    *{
+        font-size: 3.5vw;
+    }
+
+    #productName{
+        font-size: 5vw;
+    }
+
+    #description{
+        text-indent: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {}

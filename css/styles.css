@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS HEX */
+:root{
+    --brown: #79341e;
+    --lbrown: #f0ead2;
+    --lblue: #bfdef3;
+    --dblue: #22333b;
+    --fnt: "Work Sans", sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+/* Remove Datalist Arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+/* Firefox */
+input[type="text"] {
+    -moz-appearance: textfield;
+}
+/* Internet Explorer */
+input::-ms-clear {
+    display: none;
+}
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+*, .text-regular {
+  font-family: var(--fnt);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variation-settings:
+    "wdth" 100;
+    
+}
+
+
+.text-light {
+    font-family: var(--fnt);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.text-medium {
+    font-family: var(--fnt);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6, b, .text-bold {
+    font-family: var(--fnt);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+
+.bg-brown{
+    background-color: var(--lbrown);
+}
+
+.bg-dbrown{
+    background-color: var(--brown);
+}
+
+.btn-brown{
+    background-color: var(--lbrown);
+    color: var(--brown);
+}
+
+.btn-dbrown{
+    background-color: var(--brown);
+    color: white;
+}
+
+.btn-dbrown:hover{
+    color: white;
+}
+
+.text-brown{
+    color: var(--lbrown);
+}
+
+.text-dbrown{
+    color: var(--brown);
+}
+
+
+.bg-blue{
+    background-color: var(--lblue);
+}
+
+.btn-blue{
+    background-color: var(--lblue);
+    color: var(--dblue);
+}
+
+.btn-blue:hover{
+    color: white;
+    background-color: var(--dblue);
+}
+
+
+
+.bg-dblue{
+    background-color: var(--dblue);
+}
+
+.btn-dblue{
+    background-color: var(--dblue);
+    color: white;
+}
+
+.btn-dblue:hover{
+    color: white;
+}
+
+.text-dblue{
+    color: var(--dblue);
+}
+
+
+
+.vertical-middle{
+    vertical-align: middle;
+}
+
+
+.navbar {
+    position: fixed; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .active a{
+    color: var(--brown)!important;
+    font-weight: bold;
+}
+
+.navbar .nav-link{
+    color: rgb(85, 85, 85);
+}
+
+.navbar .navbar-brand{
+    color: var(--brown);
+}
+
+
+
+
+.dropdown-item:active{
+    background-color: var(--dblue);
+}
+
+#user-btn:focus{
+    outline: none;
+    box-shadow: none; 
+}
+
+#main-div {
+    animation: transitionIn-Y-bottom 0.5s;
+}
+
+.table th{
+    font-weight: bold;
+}
+
+.table thead th{
+    text-align: center;
+}
+
+
+.table th, .table td{
+    vertical-align: middle;
+}
+
+table th, table td{
+    text-align: center!important;
+}
+
+.table-border > tbody > tr > td,
+.table-border > tbody > tr > th,
+.table-border > thead > tr > td,
+.table-border > thead > tr > th,
+.table-border > tfoot > tr > th,
+.table-border > tfoot > tr > td {
+    border: none;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+
+
+.table-div{
+    background-color: white;
+    border-radius: 10px;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.table-div-mobile{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 60vh;
+}
+
+#alert-message{
+    position: fixed; 
+    margin: auto; 
+    z-index: 1000; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+
+.hide{
+    display: none;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.userImgModal{
+    width: 80px; 
+    height: 80px; 
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .sm-hide{
+        display: none;
+    }
+    .sm-block{
+        display: block;
+    }
+    .sm-inline{
+        display: inline;
+    }
+    .sm-inline-block{
+        display: inline-block;
+    }
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    .md-hide{
+        display: none;
+    }
+    .md-block{
+        display: block;
+    }
+    .md-inline{
+        display: inline;
+    }
+    .md-inline-block{
+        display: inline-block;
+    }
+
+    .navbar-brand{
+        font-size: 3.5vw;
+    }
+
+    #nav-user img{
+        width: 10px;
+    }
+
+    .btn{
+        font-size: 3.5vw;
+        padding: 6px 8px;
+    }
+
+    select, select.form-control,  input, input.form-control, label{
+        font-size: 3.5vw;
+    }
+
+    .input-group span{
+        font-size: 3.5vw;
+    }
+    
+
+    .modal {
+        font-size: 3.5vw;
+    }
+
+    .modal .modal-title{
+        font-size: 4vw;
+    }
+
+    .modal h5{
+        font-size: 4.5vw;
+    }
+
+    
+
+    .pagination .page-link{
+        font-size: 3.5vw;
+    }
+
+    .dropdown-menu .dropdown-item{
+        font-size: 3.5vw;
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+
+    .breadcrumb{
+        font-size: 3.5vw;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+    .lg-hide{
+        display: none;
+    }
+    .lg-block{
+        display: block;
+    }
+    .lg-inline{
+        display: inline;
+    }
+    .lg-inline-block{
+        display: inline-block;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+    .xl-hide{
+        display: none;
+    }
+    .xl-block{
+        display: block;
+    }
+    .xl-inline{
+        display: inline;
+    }
+    .xl-inline-block{
+        display: inline-block;
+    }
+}

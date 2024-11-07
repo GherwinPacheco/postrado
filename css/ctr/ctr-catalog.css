@@ -1,0 +1,63 @@
+.img-heading{
+    background-image: url('../../img/furniture-background copy.jpg');
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+.product-catalog{
+    animation: transitionIn-Y-bottom 0.5s;
+    position: relative;
+}
+
+.product-catalog a:hover{
+    text-decoration: none;
+}
+
+.product-catalog .sale-tag{
+    position: absolute; 
+    right: 0;
+    top: 10px;
+    z-index: 999;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    .img-heading{
+        height: 150px;
+    }
+
+    .product-catalog .card-title{
+        font-size: 3.5vw;
+    }
+
+    .product-catalog .card-text{
+        font-size: 3.5vw;
+    }
+
+    .product-catalog .sale-tag{
+        font-size: 3.5vw;
+    }
+
+    .unavailableDiv h3{
+        font-size: 5vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {}
